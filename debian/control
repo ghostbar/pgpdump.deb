@@ -1,0 +1,17 @@
+Source: pgpdump
+Section: utils
+Priority: optional
+Maintainer: Jose Luis Rivas <ghostbar38@gmail.com>
+Build-Depends: debhelper (>> 4.0), zlib1g-dev, libbz2-dev, cdbs
+Standards-Version: 3.7.3
+
+Package: pgpdump
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: PGP packet visualizer
+ pgpdump displays the sequence of OpenPGP or PGP version 2 packets from 
+ a file.
+ .
+ The output of this command is similar to the one of GnuPG's `list
+ packets' command, however, pgpdump produces a more detailed and easier
+ to understand.

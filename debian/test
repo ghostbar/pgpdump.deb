@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+if [ -x ./pgpdump ]; then
+	PGPDUMP=./pgpdump
+else
+	PGPDUMP=pgpdump
+fi
+
+for file in `find data -not -name \*.res -type f -not -path \*.svn\*`; do
+	echo -n `basename $file`
+	if env TZ=Japan $PGPDUMP $file | cmp -s - $file.res; then
+		echo " ok"
+	else
+		echo " failed"
+	fi
+done

@@ -1,0 +1,108 @@
+pgpdump (0.26-1) unstable; urgency=low
+
+  * New upstream version. (Closes: #443522)
+  * debian/copyright:
+   + Updated source URL.
+  * debian/watch:
+   + Updated watch URL.
+  * debian/rules:
+   + Migrated to CDBS, completely new `debian/rules`.
+  * debian/control:
+   + Standard-Versions updated to 3.7.3, no further modifications needed.
+   + Added to Build-depends `cdbs`.
+
+ -- Jose Luis Rivas <ghostbar38@gmail.com>  Sun, 16 Dec 2007 02:13:45 -0430
+
+pgpdump (0.25-1) unstable; urgency=low
+
+  * New upstream version
+
+ -- Jose Luis Rivas <ghostbar38@gmail.com>  Thu,  7 Dec 2006 13:45:35 -0400
+
+pgpdump (0.24-4) unstable; urgency=low
+
+  * Fixed Long description on `debian/control`.
+
+ -- Jose Luis Rivas <ghostbar38@gmail.com>  Wed, 20 Sep 2006 16:35:39 -0400
+pgpdump (0.24-3) unstable; urgency=low
+  
+  * New Mantainer. (closes: #383129)
+  * Applied patch to `keys.c` given by Brian M. Carlson. (closes: #223837)
+  
+ -- Jose Luis Rivas <ghostbar38@gmail.com>  Mon, 28 Aug 2006 23:35:07 -0400
+
+pgpdump (0.24-2) unstable; urgency=low
+
+  * QA upload.
+  * Package is orphaned (#383129); set maintainer to Debian QA Group.
+  * debian/watch: Update upstream URL.
+  * Conforms to Standards version 3.7.2.
+
+ -- Matej Vela <vela@debian.org>  Mon, 28 Aug 2006 08:28:52 +0200
+
+pgpdump (0.24-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Graham Wilson <graham@debian.org>  Fri, 24 Dec 2004 16:00:40 +0000
+
+pgpdump (0.23-1) unstable; urgency=low
+
+  * New upstream release.
+  * Just call autoreconf in autogen.sh.
+  * Update configure flags for newer autoconf versions.
+  * Add a debian/test script to run run pgpdump with all of the files in the
+    data subdirectory.
+
+ -- Graham Wilson <graham@debian.org>  Tue, 23 Nov 2004 17:08:37 +0000
+
+pgpdump (0.22-2) unstable; urgency=low
+
+  * Correctly print labels for unencrypted v3 secret keys. (closes: #236553)
+
+ -- Graham Wilson <graham@debian.org>  Thu, 11 Mar 2004 20:39:20 +0000
+
+pgpdump (0.22-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Graham Wilson <graham@debian.org>  Sun, 25 Jan 2004 04:49:55 +0000
+
+pgpdump (0.21-1) unstable; urgency=low
+
+  * Add a watch file for uscan.
+  * New upstream version.
+  * Add autogen.sh to regenerate auto* files.
+  * Handle critical flag of subpacket type octet. (closes: #229020)
+ 
+ -- Graham Wilson <graham@debian.org>  Fri, 23 Jan 2004 03:15:23 +0000
+
+pgpdump (0.20-2) unstable; urgency=low
+
+  * Do read from stdin, but handle EOF better. (closes: #223036)
+
+ -- Graham Wilson <graham@debian.org>  Thu, 11 Dec 2003 04:04:11 +0000
+
+pgpdump (0.20-1) unstable; urgency=low
+
+  * New upstream version.
+    - Support bzip2 compression from bis09 draft. (closes: #223035)
+  * Correctly support DEB_BUILD_OPTIONS.
+  * Don't read from stdin. (closes: #223036)
+
+ -- Graham Wilson <graham@debian.org>  Wed, 10 Dec 2003 21:24:20 +0000
+
+pgpdump (0.19-2) unstable; urgency=low
+
+  * Change maintainer address.
+  * Increment standards version. No changes.
+
+ -- Graham Wilson <graham@debian.org>  Thu, 18 Sep 2003 18:32:54 +0000
+
+pgpdump (0.19-1) unstable; urgency=low
+
+  * Initial Debian release. (closes: #193093)
+
+ -- Graham Wilson <bob@decoy.wox.org>  Fri, 08 Aug 2003 17:46:18 +0000
+
+vim:ts=2:sw=2:et:
