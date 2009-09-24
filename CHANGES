@@ -1,0 +1,186 @@
+			      Change Log
+
+0.26 2007/09/06
+
+* Catching upto ID 22.
+
+0.25 2006/10/02
+
+* Catching upto ID 18
+	- Adding SHA224.
+
+0.24 2004/12/24
+
+* More secure programming style.
+* Adding GnuPG string-to-key.
+* Adding a missing key flag.
+
+0.23 2004/10/27
+
+* Catching up to 2440bis-10/11.
+	- 'u' for Literal Data
+	- embedded signature
+	- Primary Key Binding Signature
+* Bug fix for plain_Secret_Key().
+* Fixing Symmetrically_Encrypted_Data_Packet() and Secret_Key_Packet()
+  especially for IDEA.
+
+0.22 2004/01/23
+
+* parse_subpacket() are split into parse_signature_subpacket() and
+  parse_userattr_subpacket(). A bug of length calculation is fixed.
+* The critical bit of the signature subpackets are supported.
+	Peter Palfrader <peter@palfrader.org>
+
+0.21 2004/01/13
+
+* Removing compiler warnings.
+* Using getopt().
+* Supporting RISC OS.
+	Stefan Bellon <sbellon@sbellon.de>
+* Correct casting for Bzip2.
+	Stefan Bellon <sbellon@sbellon.de>
+* Prepared os/riscos/{config.h,Makefile} since "sh" does not exist on
+  RISC OS.
+	Stefan Bellon <sbellon@sbellon.de>
+
+0.20 2003/12/08
+
+* Catching up to 2440bis-09. Bzip2 was supported.
+
+0.19 2003/06/06
+
+* Catching up to 2440bis-08.
+* Supporting MINGW32. This is dirty and needs to be refined.
+* autotime.h -> types.c
+
+0.18 2003/05/20
+
+* Supporting MacOS X.
+	"Stefan H. Holek" <stefan@epy.co.at>
+* Catching up to 2440bis-07.
+	"Stefan H. Holek" <stefan@epy.co.at>
+* A bug fix of old_Public_Key_Packet.
+	Shigeru NAKAMURA <s-nakamu@ipa.go.jp>
+
+0.17 2002/06/28
+
+* Defining the SHA-1 hash for Secret Key Packet.
+* Defining the -a and -g option.
+* Catching up to 2440bis-05.
+* Implementing User_Attribute_Packet.
+* Implementing features and revocation_target.
+* Removing macros to avoid side-effects.
+* Most modifications above come from:
+	"Stefan H. Holek" <stefan@epy.co.at>
+
+0.16 2001/12/06
+
+* Key ID hack.
+	Jason Harris <jharris@widomaker.com>
+
+0.15 2001/11/13
+
+* Old man style for pgpdump.1.
+* The symmetric encryption algorithm is displayed more user-friendly.
+
+0.14 2001/11/09
+
+* Catching up to 2440bis-03.
+
+0.13 2001/10/24
+
+* Workaround for minus date.
+	"Stefan H. Holek" <stefan@epy.co.at>
+* No-libz hack.
+	"Bruce Kroeze" <bkroeze@flatrock.com>
+* Small fixes.
+	"Stefan H. Holek" <stefan@epy.co.at>
+
+0.12 2001/08/14
+
+* Portability hack.
+	Stefan Bellon <sbellon@sbellon.de>
+
+0.11 2001/05/20
+
+* Defining line_not_blank().
+	Stefan H. Holek <stefan@epy.co.at>
+* Enhancing Public_Key_Encrypted_Session_Key_Packet().
+	Stefan H. Holek <stefan@epy.co.at>
+	Brian M. Carlson <karlsson@hal-pc.org>
+
+0.10 2001/05/08
+
+* Fixing key_server_preferences().
+* Fixing signature_multi_precision_integer().
+
+0.09 2001/05/05
+
+* Implementing additional_decryption_key() like revocation_key().
+	Stefan H. Holek <stefan@epy.co.at>
+
+0.08 2001/04/12
+
+* Fixing IV length.
+	Stefan H. Holek <stefan@epy.co.at>
+	disastry@saiknes.lv
+* Skipping the tail of armor.
+	Stefan H. Holek <stefan@epy.co.at>
+
+0.07 2001/04/05
+
+* New scheme to handle partial bodies.
+* Sophisticated buffering mechanism. No temporary files are created.
+* Creating pgpdump.1.
+
+Stefan H. Holek <stefan@epy.co.at> kindly contributes the followings:
+
+* Fixed keyserver preferences (can be >1 octet)
+* Changed display of time fields to include timezone information
+* Added -u flag to display time fields in UTC instead of the local
+  timezone (PGP time fields == seconds since 00:00:00, January 1,
+  1970, UTC)
+* Fixed key and signature expiration time calculations
+  (expiration time == seconds since creation time)
+* Added capability to read from stdin when no file is specifed on the 
+  commandline
+* Implemented missing subpackets
+	- revocation_key
+	- reason_for_revocation
+	- key_flags
+	- signer_user_id (not tested)
+	- notation_data (not tested)
+
+0.06 2001/03/30
+
+* Supporting old-format packet length 3 ("until the end of the file").
+
+0.05 2001/03/22
+
+* Adding the "-p" option.
+* Adding some tags and algorithms.
+* A serious bug fix of Public_Key_Packet(). "len" was wrong.
+* A serious bug fix of Getc(). Defined Getc1().
+
+0.04 2000/10/18
+
+* configure support.
+
+0.03 2000/08/27
+
+* Uncompress support.
+* Sophisticate armor support.
+* Partial Body Length
+	ARAI Shun-ichi <hermes@ceres.dti.ne.jp>
+
+0.02 1998/12/25
+
+* Clean up the "data" directory.
+* Linux's mktemp(3) requires 6 "X"s.
+* Replace "uncompress.c" with "uncomp.c" due to the file length
+limitation of MS-DOS.
+
+0.01 1998/12/04
+
+* The first release

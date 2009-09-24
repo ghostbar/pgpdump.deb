@@ -1,0 +1,40 @@
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+bindir = @bindir@
+mandir = @mandir@/man1
+LIBS = @LIBS@
+CFLAGS  = @CFLAGS@ -O
+LDFLAGS = @LDFLAGS@
+
+RM = rm -f
+INSTALL  = install -c -m
+
+INCS = pgpdump.h
+SRCS = pgpdump.c types.c tagfuncs.c packet.c subfunc.c signature.c keys.c \
+       buffer.c uatfunc.c 
+OBJS = pgpdump.o types.o tagfuncs.o packet.o subfunc.o signature.o keys.o \
+       buffer.o uatfunc.o
+PROG = pgpdump
+
+MAN  = pgpdump.1
+
+CNF = config.h config.status config.cache config.log
+MKF = Makefile
+
+.c.o:
+	$(CC) -c $(CFLAGS) $<
+
+all: $(PROG)
+
+$(PROG): $(OBJS)
+	$(CC) $(CFLAGS) -o $(PROG) $(OBJS) $(LIBS) $(LDFLAGS)
+
+clean:
+	$(RM) $(OBJS) $(PROG)
+
+distclean:
+	$(RM) $(OBJS) $(PROG) $(CNF) $(MKF)
+
+install: all
+	$(INSTALL) 555 $(PROG) $(bindir)
+	$(INSTALL) 444 $(MAN) $(mandir)
