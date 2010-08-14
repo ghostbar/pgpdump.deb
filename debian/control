@@ -2,12 +2,12 @@ Source: pgpdump
 Section: utils
 Priority: optional
 Maintainer: Jose Luis Rivas <ghostbar38@gmail.com>
-Build-Depends: debhelper (>> 4.0), zlib1g-dev, libbz2-dev, cdbs
+Build-Depends: debhelper (>> 8.0), zlib1g-dev, libbz2-dev
 Standards-Version: 3.7.3
 
 Package: pgpdump
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: PGP packet visualizer
  pgpdump displays the sequence of OpenPGP or PGP version 2 packets from 
  a file.
