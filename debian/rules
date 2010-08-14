@@ -3,4 +3,4 @@
 	dh $@
 
 override_dh_auto_install:
-	dh_auto_install --destdir=$(CURDIR)/debian/pgpdump/usr
+	dh_auto_install -- prefix=$(CURDIR)/debian/pgpdump/usr
