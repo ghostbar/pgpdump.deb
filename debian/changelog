@@ -1,3 +1,14 @@
+pgpdump (0.27-1) UNRELEASED; urgency=low
+
+  * New upstream release
+  * Migrated to debhelper 7, removed cdbs and dependencies
+  * Updated debian/watch, now pointing to github repo
+  * Updated my email address on debian/control
+  * Now dumps notation names (fixed upstream with patch from Riskó Gergely
+  Closes: #464572)
+
+ -- Jose Luis Rivas <ghostbar@debian.org>  Sat, 14 Aug 2010 09:26:34 -0430
+
 pgpdump (0.26-1) unstable; urgency=low
 
   * New upstream version. (Closes: #443522)
