@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Jose Luis Rivas <ghostbar@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), zlib1g-dev, libbz2-dev
-Standards-Version: 3.7.3
+Standards-Version: 3.9.1
 
 Package: pgpdump
 Architecture: any
