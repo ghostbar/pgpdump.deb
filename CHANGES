@@ -1,5 +1,12 @@
 			      Change Log
 
+0.27 2010/08/12
+
+* Adding Camellia defined in RFC 5581.
+	"Stefan H. Holek" <stefan>
+* Notation name is always text.
+	Risko Gergely <gergely>
+
 0.26 2007/09/06
 
 * Catching upto ID 22.
@@ -30,19 +37,19 @@
 * parse_subpacket() are split into parse_signature_subpacket() and
   parse_userattr_subpacket(). A bug of length calculation is fixed.
 * The critical bit of the signature subpackets are supported.
-	Peter Palfrader <peter@palfrader.org>
+	Peter Palfrader <peter>
 
 0.21 2004/01/13
 
 * Removing compiler warnings.
 * Using getopt().
 * Supporting RISC OS.
-	Stefan Bellon <sbellon@sbellon.de>
+	Stefan Bellon <sbellon>
 * Correct casting for Bzip2.
-	Stefan Bellon <sbellon@sbellon.de>
+	Stefan Bellon <sbellon>
 * Prepared os/riscos/{config.h,Makefile} since "sh" does not exist on
   RISC OS.
-	Stefan Bellon <sbellon@sbellon.de>
+	Stefan Bellon <sbellon>
 
 0.20 2003/12/08
 
@@ -57,11 +64,11 @@
 0.18 2003/05/20
 
 * Supporting MacOS X.
-	"Stefan H. Holek" <stefan@epy.co.at>
+	"Stefan H. Holek" <stefan>
 * Catching up to 2440bis-07.
-	"Stefan H. Holek" <stefan@epy.co.at>
+	"Stefan H. Holek" <stefan>
 * A bug fix of old_Public_Key_Packet.
-	Shigeru NAKAMURA <s-nakamu@ipa.go.jp>
+	Shigeru NAKAMURA <s-nakamu>
 
 0.17 2002/06/28
 
@@ -72,12 +79,12 @@
 * Implementing features and revocation_target.
 * Removing macros to avoid side-effects.
 * Most modifications above come from:
-	"Stefan H. Holek" <stefan@epy.co.at>
+	"Stefan H. Holek" <stefan>
 
 0.16 2001/12/06
 
 * Key ID hack.
-	Jason Harris <jharris@widomaker.com>
+	Jason Harris <jharris>
 
 0.15 2001/11/13
 
@@ -91,24 +98,24 @@
 0.13 2001/10/24
 
 * Workaround for minus date.
-	"Stefan H. Holek" <stefan@epy.co.at>
+	"Stefan H. Holek" <stefan>
 * No-libz hack.
-	"Bruce Kroeze" <bkroeze@flatrock.com>
+	"Bruce Kroeze" <bkroeze>
 * Small fixes.
-	"Stefan H. Holek" <stefan@epy.co.at>
+	"Stefan H. Holek" <stefan>
 
 0.12 2001/08/14
 
 * Portability hack.
-	Stefan Bellon <sbellon@sbellon.de>
+	Stefan Bellon <sbellon>
 
 0.11 2001/05/20
 
 * Defining line_not_blank().
-	Stefan H. Holek <stefan@epy.co.at>
+	Stefan H. Holek <stefan>
 * Enhancing Public_Key_Encrypted_Session_Key_Packet().
-	Stefan H. Holek <stefan@epy.co.at>
-	Brian M. Carlson <karlsson@hal-pc.org>
+	Stefan H. Holek <stefan>
+	Brian M. Carlson <karlsson>
 
 0.10 2001/05/08
 
@@ -118,15 +125,15 @@
 0.09 2001/05/05
 
 * Implementing additional_decryption_key() like revocation_key().
-	Stefan H. Holek <stefan@epy.co.at>
+	Stefan H. Holek <stefan>
 
 0.08 2001/04/12
 
 * Fixing IV length.
-	Stefan H. Holek <stefan@epy.co.at>
-	disastry@saiknes.lv
+	Stefan H. Holek <stefan>
+	disastry
 * Skipping the tail of armor.
-	Stefan H. Holek <stefan@epy.co.at>
+	Stefan H. Holek <stefan>
 
 0.07 2001/04/05
 
@@ -134,7 +141,7 @@
 * Sophisticated buffering mechanism. No temporary files are created.
 * Creating pgpdump.1.
 
-Stefan H. Holek <stefan@epy.co.at> kindly contributes the followings:
+Stefan H. Holek <stefan> kindly contributes the followings:
 
 * Fixed keyserver preferences (can be >1 octet)
 * Changed display of time fields to include timezone information
@@ -143,7 +150,7 @@ Stefan H. Holek <stefan@epy.co.at> kindly contributes the followings:
   1970, UTC)
 * Fixed key and signature expiration time calculations
   (expiration time == seconds since creation time)
-* Added capability to read from stdin when no file is specifed on the 
+* Added capability to read from stdin when no file is specifed on the
   commandline
 * Implemented missing subpackets
 	- revocation_key
@@ -172,7 +179,7 @@ Stefan H. Holek <stefan@epy.co.at> kindly contributes the followings:
 * Uncompress support.
 * Sophisticate armor support.
 * Partial Body Length
-	ARAI Shun-ichi <hermes@ceres.dti.ne.jp>
+	ARAI Shun-ichi <hermes>
 
 0.02 1998/12/25
 
