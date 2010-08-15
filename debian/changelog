@@ -7,7 +7,7 @@ pgpdump (0.27-1) UNRELEASED; urgency=low
   * Now dumps notation names (fixed upstream with patch from Riskó Gergely
   Closes: #464572)
   * Bumped to Standards-Version 3.9.1 wo/ changes.
-  * Added Vcs-git stanza to debian/control.
+  * Added Vcs-git and Homepage fields to debian/control.
 
  -- Jose Luis Rivas <ghostbar@debian.org>  Sat, 14 Aug 2010 09:26:34 -0430
 
