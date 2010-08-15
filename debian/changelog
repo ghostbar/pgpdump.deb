@@ -1,4 +1,4 @@
-pgpdump (0.27-1) UNRELEASED; urgency=low
+pgpdump (0.27-1) unstable; urgency=low
 
   * New upstream release
   * Migrated to debhelper 7, removed cdbs and dependencies
@@ -9,7 +9,7 @@ pgpdump (0.27-1) UNRELEASED; urgency=low
   * Bumped to Standards-Version 3.9.1 wo/ changes.
   * Added Vcs-git and Homepage fields to debian/control.
 
- -- Jose Luis Rivas <ghostbar@debian.org>  Sat, 14 Aug 2010 09:26:34 -0430
+ -- Jose Luis Rivas <ghostbar@debian.org>  Sat, 14 Aug 2010 22:23:30 -0430
 
 pgpdump (0.26-1) unstable; urgency=low
 
