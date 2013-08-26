@@ -1,3 +1,3 @@
 version=3
-http://githubredir.debian.net/github/kazu-yamamoto/pgpdump (.*).tar.gz
+http://githubredir.debian.net/github/kazu-yamamoto/pgpdump/ v(.*).tar.gz
 
