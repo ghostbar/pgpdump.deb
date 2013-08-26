@@ -3,7 +3,7 @@ Section: utils
 Priority: optional
 Maintainer: Jose Luis Rivas <ghostbar@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), zlib1g-dev, libbz2-dev
-Standards-Version: 3.9.1
+Standards-Version: 3.9.4
 Homepage: http://www.mew.org/~kazu/proj/pgpdump/en/
 Vcs-git: git://git.debian.org/git/collab-maint/pgpdump.git
 Vcs-browser: http://git.debian.org/?p=collab-maint/pgpdump.git;a=summary
