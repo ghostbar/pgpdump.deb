@@ -1,13 +1,16 @@
-pgpdump (0.28-1) UNRELEASED; urgency=low
+pgpdump (0.28-1) unstable; urgency=low
 
   * New upstream version.
   * debian/watch: mangle updated to match versioning on GitHub (with a v
     before the version number).
   * debian/copyright: updated to dep5.
   * debian/source/format: Created.
-  * debian/control: Standard-Versions to 3.9.4. (Update to dep5).
+  * debian/control: 
+   + Standard-Versions to 3.9.4.
+   + debhelper >= 9.
+  * debian/compat: bump to 9.
 
- -- Jose Luis Rivas <ghostbar@debian.org>  Mon, 26 Aug 2013 09:58:27 -0430
+ -- Jose Luis Rivas <ghostbar@debian.org>  Mon, 26 Aug 2013 10:45:17 -0430
 
 pgpdump (0.27-1) unstable; urgency=low
 
