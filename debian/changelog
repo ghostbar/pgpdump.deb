@@ -1,8 +1,8 @@
-pgpdump (0.29-1) UNRELEASED; urgency=medium
+pgpdump (0.29-1) unstable; urgency=medium
 
   * New upstream version
 
- -- Jose Luis Rivas <ghostbar@debian.org>  Wed, 09 Sep 2015 11:30:38 -0500
+ -- Jose Luis Rivas <ghostbar@debian.org>  Wed, 09 Sep 2015 11:50:06 -0500
 
 pgpdump (0.28-1) unstable; urgency=low
 
